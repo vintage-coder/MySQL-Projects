@@ -31,5 +31,18 @@ INSERT INTO Information VALUES ('Cristies','Willst','f','10','2010-02-22');
 SELECT * FROM Information;
 
 
+create database Committe;
+
+use Committe;
+
+create table profile1 (id int auto_increment primary key, first_name varchar(30),last_name varchar(30)); 
+
+insert into profile1 (first_name,last_name) values("Albert","einstein");
+
+select * from profile1;
+
+
+
+
 
 
