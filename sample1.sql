@@ -1,5 +1,5 @@
 
--- ------------------------------------Triggers 
+-- ------------------------------------Triggers -------------------------------------
 /*
 a trigger is a stored program invoked automatically in response to an event
  such as insert, update, or delete that occurs in the associated table.
