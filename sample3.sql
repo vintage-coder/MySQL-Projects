@@ -111,4 +111,28 @@ WHERE
  Without an index, MySQL must scan the whole table to locate the relevant rows. 
 The larger table, the slower it searches. */
 
+use classicmodels;
+SHOW INDEXES FROM employees;
 
+
+explain select 
+    employeeNumber, 
+    lastName, 
+    firstName
+FROM
+    employees
+WHERE
+    jobTitle = 'Sales Rep';
+    
+    
+CREATE INDEX jobTitle ON employees(jobTitle);
+
+explain select 
+    employeeNumber, 
+    lastName, 
+    firstName
+FROM
+    employees
+WHERE
+    jobTitle = 'Sales Rep';
+    
